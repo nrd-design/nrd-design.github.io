@@ -4,7 +4,7 @@
   bottom: 5%;
   overflow: visible;
 }
-#light {
+.light {
   display: none;
 }
 #moon {
@@ -34,4 +34,13 @@ body {
   max-width: 25%;
   bottom: 40%;
   left: 20%;
+}
+#fence {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  height: 15vw;
+  background: url('https://s3-eu-west-1.amazonaws.com/nrddesign/fence_panel.png') top left repeat-x;
+  background-size: contain;
 }

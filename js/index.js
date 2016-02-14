@@ -7,13 +7,14 @@ var obj = $('#car'),
   c1 = $('#cloudOne'),
   c2 = $('#cloudTwo'),
   c3 = $('#cloudThree'),
+  fence = $('#fence'),
   doc = $(document);
 
 // Mouse movement
 function mouser() {
   doc.mousemove(function(e) {
     // move the car
-    var spin = e.pageX * 1,
+    var spin = e.pageX * 6,
       carW = obj.outerWidth() / 2,
       pos = e.pageX - carW;
     TweenMax.set(w1, {
@@ -35,19 +36,23 @@ function mouser() {
     var vMid = doc.width() / 2;
     var hMid = doc.height() / 2;
     var x = -(e.pageX - vMid) / 15;
-    var c1x = -(e.pageX - vMid) / 7;
+    var c1x = -(e.pageX - vMid) / 10;
+    var fx = -(e.pageX - vMid) * 2;
     TweenMax.to(moon, 0.1, {
       x: -x
     })
     // Move the clouds
     TweenMax.to(c1, 0.1, {
-      x: -c1x
+      x: c1x
     })
     TweenMax.to(c2, 0.1, {
-      x: -c1x
+      x: c1x
     })
     TweenMax.to(c3, 0.1, {
-      x: -c1x
+      x: c1x
+    })
+    TweenMax.to(fence, 0.1, {
+      backgroundPosition: ""+fx+"px 0px"
     })
     
   });
@@ -55,5 +60,5 @@ function mouser() {
 
 mouser();
 $(document).click(function() {
-  $('#light').toggle();
+  $('.light').toggle();
 });
