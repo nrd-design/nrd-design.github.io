@@ -1,0 +1,36 @@
+#car {
+  max-width: 60%;
+  position: absolute;
+  bottom: 5%;
+  overflow: visible;
+}
+#light {
+  display: none;
+}
+#moon {
+  max-width:40%;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+}
+body {
+  background: #5B5B5B;
+}
+#cloudOne {
+  position: absolute;
+  max-width: 25%;
+  bottom: 60%;
+  left: 20%;
+}
+#cloudTwo {
+  position: absolute;
+  max-width: 25%;
+  bottom: 45%;
+  left: 55%;
+}
+#cloudThree {
+  position: absolute;
+  max-width: 25%;
+  bottom: 40%;
+  left: 20%;
+}
