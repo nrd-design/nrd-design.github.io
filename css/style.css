@@ -15,6 +15,7 @@
 }
 body {
   background: #5B5B5B;
+  overflow: hidden;
 }
 #cloudOne {
   position: absolute;
